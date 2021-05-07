@@ -2,7 +2,7 @@
 <component type="desktop-application">
   <id>com.factorio.factorio</id>
   
-  <name>factorio-demo</name>
+  <name>factorio</name>
   <summary>Factorio is a game in which you build and maintain factories. </summary>
   
   <metadata_license>MIT</metadata_license>

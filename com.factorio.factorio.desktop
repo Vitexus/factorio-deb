@@ -2,11 +2,11 @@
 Version=1.0
 Type=Application
 
-Name=factorio-demo
+Name=factorio
 Comment=Factorio is a game in which you build and maintain factories. 
 Categories=Game;StrategyGame;
 
-Icon=factorio-demo
-Exec=factorio-demo
+Icon=factorio
+Exec=factorio
 Terminal=false
 
