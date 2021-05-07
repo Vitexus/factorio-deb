@@ -1,0 +1,18 @@
+Source: factorio
+Section: games
+Priority: optional
+Maintainer: "Vítězslav Dvořák" <info@vitexsoftware.cz>
+Build-Depends: debhelper (>=11~),wget,awk,inkscape
+Standards-Version: 4.1.4
+Homepage: https://factorio.com/
+
+Package: factorio
+Depends: ${misc:Depends}, ${shlibs:Depends}, xserver-xorg, ttf-dejavu-core, fonts-lato, fonts-noto-mono, fonts-noto-hinted,
+Architecture: amd64
+Description: game in which you build and maintain factories.
+ You will be mining resources, researching technologies, building 
+ infrastructure, automating production and fighting enemies. 
+ Use your imagination to design your factory, combine simple 
+ elements into ingenious structures, apply management skills 
+ to keep it working, and protect it from the creatures who 
+ don't really like you. 

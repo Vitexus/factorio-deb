@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+
+version=1.1.33
+archive="factorio_alpha_x64_$(version).tar.xz"
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build
+
+override_dh_install:
+	mkdir -p debian/factorio/usr/share/games
+	tar xfv $(archive) -C debian/factorio/usr/share/games
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/DejaVuSans-Bold.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/DejaVuSans.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/DejaVuSansMono.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/Lato-Bold.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/Lato-Regular.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/Lato-Semibold.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSans-Bold.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSans-Regular.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSansArabic-Bold.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSansArabic-Regular.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSansHebrew-Bold.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSansHebrew-Regular.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSansThai-Bold.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSansThai-Regular.ttf
+	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoMono-Regular.ttf
+	touch debian/factorio/usr/share/games/factorio/.lock
+	chmod 666 debian/factorio/usr/share/games/factorio/.lock
+	touch debian/factorio/usr/share/games/factorio/factorio-current.log
+	chmod 666 debian/factorio/usr/share/games/factorio/factorio-current.log
+	dh_install
+	debian/mkico.sh

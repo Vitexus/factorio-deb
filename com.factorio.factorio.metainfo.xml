@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.factorio.factorio</id>
+  
+  <name>factorio-demo</name>
+  <summary>Factorio is a game in which you build and maintain factories. </summary>
+  
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  
+  <description>
+    <p>
+      You will be mining resources, researching technologies, building infrastructure, automating production and fighting enemies. Use your imagination to design your factory, combine simple elements into ingenious structures, apply management skills to keep it working, and protect it from the creatures who don&apos;t really like you.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">com.factorio.factorio.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://factorio.com/static/img/screenshots/thumb-screenshot-1.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image>https://factorio.com/static/img/screenshots/screenshot-3.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image>https://factorio.com/static/img/screenshots/screenshot-4.jpg</image>
+    </screenshot>
+  </screenshots>
+</component>
+

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+
+Name=factorio-demo
+Comment=Factorio is a game in which you build and maintain factories. 
+Categories=Game;StrategyGame;
+
+Icon=factorio-demo
+Exec=factorio-demo
+Terminal=false
+

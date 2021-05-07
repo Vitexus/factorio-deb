@@ -1,0 +1,6 @@
+factorio.png				/usr/share/icons/hicolor/256x256/apps/
+com.factorio.factorio_demo.metainfo.xml		/usr/share/metainfo/
+com.factorio.factorio_demo.desktop		/usr/share/applications/
+
+#debian/tmp/factorio/bin/x64/factorio usr/games
+#debian/tmp/factorio/data	      usr/share/games/factorio
