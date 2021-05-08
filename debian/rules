@@ -27,7 +27,7 @@ override_dh_install:
 	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSansThai-Bold.ttf
 	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoSansThai-Regular.ttf
 	rm  debian/factorio/usr/share/games/factorio/data/core/fonts/NotoMono-Regular.ttf
-	mkdir -p /usr/share/doc/HTML/en/factorio
+	mkdir -p debian/factorio/usr/share/doc/HTML/en/factorio
 	mv  debian/factorio/usr/share/games/factorio/doc-html/* debian/factorio/usr/share/doc/HTML/en/factorio
 	touch debian/factorio/usr/share/games/factorio/.lock
 	chmod 666 debian/factorio/usr/share/games/factorio/.lock
