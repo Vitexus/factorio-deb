@@ -7,5 +7,5 @@ The [Factorio](https://factorio.com/) is not free game.  The linux build exist b
 
 Then build package yourself using debuild -us -uc command. The result you can find as **../factorio_1.1.33_amd64.deb**
 
-There is also debian package woth demo for older version of game. Download and try: http://repo.vitexsoftware.cz/pool/buster/main/f/factorio-demo/
+There is also debian package with demo for older version of game. Download and try: http://repo.vitexsoftware.cz/pool/buster/main/f/factorio-demo/
 
