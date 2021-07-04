@@ -2,7 +2,7 @@ Source: factorio
 Section: games
 Priority: optional
 Maintainer: "Vítězslav Dvořák" <info@vitexsoftware.cz>
-Build-Depends: debhelper (>=11~),wget,awk,inkscape
+Build-Depends: debhelper (>=11~),wget,awk,inkscape,curl, jq
 Standards-Version: 4.1.4
 Homepage: https://factorio.com/
 
