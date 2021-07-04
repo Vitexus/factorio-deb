@@ -4,6 +4,8 @@ version = $(shell curl -s  "https://api.github.com/repos/wube/factorio-data/tags
 archive="factorio_alpha_x64_$(version).tar.xz"
 
 
+%:
+
 	dh $@
 
 override_dh_auto_build:
