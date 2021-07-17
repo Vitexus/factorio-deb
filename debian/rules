@@ -1,9 +1,7 @@
 #!/usr/bin/make -f
 
-version = $(shell curl -s  "https://api.github.com/repos/wube/factorio-data/tags" | jq -r '.[0].name')
-version = "1.1.35"
+version = $(shell debian/getversion.sh)
 archive="factorio_alpha_x64_$(version).tar.xz"
-
 
 %:
 
