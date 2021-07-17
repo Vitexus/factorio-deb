@@ -16,5 +16,7 @@
 /usr/share/fonts/truetype/noto/NotoSansHebrew-Regular.ttf	/usr/share/games/factorio/data/core/fonts/NotoSansHebrew-Regular.ttf
 /usr/share/fonts/truetype/noto/NotoSansThai-Bold.ttf		/usr/share/games/factorio/data/core/fonts/NotoSansThai-Bold.ttf
 /usr/share/fonts/truetype/noto/NotoSansThai-Regular.ttf   	/usr/share/games/factorio/data/core/fonts/NotoSansThai-Regular.ttf
-
-
+/usr/share/fonts/truetype/noto/NotoSans-SemiBold.ttf usr/share/games/factorio/data/core/fonts/NotoSans-SemiBold.ttf
+/usr/share/fonts/truetype/noto/NotoSansArabic-SemiBold.ttf usr/share/games/factorio/data/core/fonts/NotoSansArabic-SemiBold.ttf
+/usr/share/fonts/truetype/noto/NotoSansHebrew-SemiBold.ttf usr/share/games/factorio/data/core/fonts/NotoSansHebrew-SemiBold.ttf
+/usr/share/fonts/truetype/noto/NotoSansThai-SemiBold.ttf usr/share/games/factorio/data/core/fonts/NotoSansThai-SemiBold.ttf

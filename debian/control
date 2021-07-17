@@ -7,7 +7,7 @@ Standards-Version: 4.1.4
 Homepage: https://factorio.com/
 
 Package: factorio
-Depends: ${misc:Depends}, ${shlibs:Depends}, xserver-xorg, fonts-dejavu-core, fonts-lato, fonts-noto-mono, fonts-noto-hinted,
+Depends: ${misc:Depends}, ${shlibs:Depends}, xserver-xorg, fonts-dejavu-core, fonts-lato, fonts-noto-mono, fonts-noto-hinted, fonts-noto-extra
 Architecture: amd64
 Description: game in which you build and maintain factories.
  You will be mining resources, researching technologies, building 
