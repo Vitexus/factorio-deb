@@ -14,7 +14,11 @@ Depends: ${misc:Depends}, ${shlibs:Depends},
  fonts-noto-mono, 
  fonts-noto-hinted, 
  fonts-noto-extra, 
- libgl1|nvidia-340|primus-libs|virtualbox-guest-x11|virtualbox-guest-x11-hwe
+ libgl1|nvidia-340|primus-libs|virtualbox-guest-x11|virtualbox-guest-x11-hwe,
+ libxinerama1, 
+ libxcursor1, 
+ libasound2, 
+ libpulse0
 Architecture: amd64
 Description: game in which you build and maintain factories.
  You will be mining resources, researching technologies, building 
