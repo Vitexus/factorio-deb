@@ -22,7 +22,7 @@ pipeline {
 
         stage('debian-buster') {
             agent {
-                docker { image 'vitexsoftware/debian:oldstable' }
+                docker { image 'vitexsoftware/debian:oldstable' reuseNode true }
             }
             steps {
                 dir('build/debian/package') {
@@ -42,7 +42,7 @@ pipeline {
 
         stage('debian-bullseye') {
             agent {
-                docker { image 'vitexsoftware/debian:stable' }
+                docker { image 'vitexsoftware/debian:stable' reuseNode true }
             }
             steps {
                 dir('build/debian/package') {
@@ -62,7 +62,7 @@ pipeline {
 
         stage('debian-bookworm') {
             agent {
-                docker { image 'vitexsoftware/debian:testing' }
+                docker { image 'vitexsoftware/debian:testing' reuseNode true }
             }
             steps {
                 dir('build/debian/package') {
@@ -82,7 +82,7 @@ pipeline {
 
         stage('ubuntu-focal') {
             agent {
-                docker { image 'vitexsoftware/ubuntu:stable' }
+                docker { image 'vitexsoftware/ubuntu:stable' reuseNode true }
             }
             steps {
                 dir('build/debian/package') {
@@ -102,7 +102,7 @@ pipeline {
 
         stage('ubuntu-hirsute') {
             agent {
-                docker { image 'vitexsoftware/ubuntu:testing' }
+                docker { image 'vitexsoftware/ubuntu:testing' reuseNode true }
             }
             steps {
                 dir('build/debian/package') {
