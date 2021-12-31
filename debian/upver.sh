@@ -7,4 +7,4 @@ else
     VERSION=$FORCE_FACTORIO_VERSION
     dch -b -v $VERSION "Forced version $VERSION"
 fi
-git commit -a "set version to $VERSION"
+git commit debian/changelog -m "set version to $VERSION"
