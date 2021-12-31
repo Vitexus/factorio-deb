@@ -1,8 +1,9 @@
 #!/bin/sh
 
-LOGIN=""
-PASSWD=""
-VERSION=`curl -s "https://api.github.com/repos/wube/factorio-data/tags" | jq -r '.[0].name'`
+LOGIN="vitexus"
+PASSWD="QPLRN2ghXQA6kzM"
+
+VERSION=`./debian/currver.sh`
 ARCHIVE="factorio_alpha_x64_${VERSION}.tar.xz"
 
 
