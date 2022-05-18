@@ -9,6 +9,7 @@ for resolution in $resolutions
 do
     echo $resolution
     mkdir -p $DIR/${resolution}x${resolution}/apps/
+echo    inkscape -z -w ${resolution} -h ${resolution} $SRC $DIR/${resolution}x${resolution}/apps/$PACKAGE.png
     inkscape -z -w ${resolution} -h ${resolution} $SRC $DIR/${resolution}x${resolution}/apps/$PACKAGE.png
 done
 mkdir -p $DIR/scalable/apps
