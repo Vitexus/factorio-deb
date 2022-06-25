@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-version = $(shell debian/getversion.sh)
+version = $(shell dpkg-parsechangelog --show-field Version)
 archive="factorio_alpha_x64_$(version).tar.xz"
 
 %:

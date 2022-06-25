@@ -8,3 +8,4 @@ else
     dch -b -v $VERSION "Forced version $VERSION"
 fi
 git commit debian/changelog -m "set version to $VERSION"
+export FACTORIO=${VERSION}
