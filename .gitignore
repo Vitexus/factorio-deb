@@ -5,3 +5,4 @@ debian/factorio.debhelper.log
 debian/factorio.substvars
 debian/files
 debian/factorio/
+uploader.sh
