@@ -65,7 +65,8 @@ architectures.each {
                         script: 'dpkg-parsechangelog --show-field Version',
                         returnStdout: true
                     ).trim()
-		    sh 'cp ../factorio_alpha_x64_' + VERSION + '.tar.xz factorio_alpha_x64_' + VERSION + '.tar.xz'
+		    sh 'echo $WORKSPACE'
+		    sh 'cp ' + env.WORKSPACE + '/factorio_alpha_x64_' + VERSION + '.tar.xz factorio_alpha_x64_' + VERSION + '.tar.xz'
                     ver = VERSION + '~' + distroCodename + '~' + env.BUILD_NUMBER
                 }
                 stage('Build ' + architecture + ' ' + distribution) {
