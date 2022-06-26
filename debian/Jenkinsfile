@@ -59,13 +59,13 @@ architectures.each {
         node( architecture ) {
             ansiColor('xterm') {
                 stage('Checkout ' + architecture + ' ' + distribution) {
-                    buildImage = docker.image(vendor + '/' + distribution).withRun('-v ${PWD}:/workspace')
+                    buildImage = docker.image(vendor + '/' + distribution)
                     sh 'git checkout debian/changelog'
                     def VERSION = sh (
                         script: 'dpkg-parsechangelog --show-field Version',
                         returnStdout: true
                     ).trim()
-		    sh 'ln -s /workspace/factorio_alpha_x64_' + VERSION + '.tar.xz factorio_alpha_x64_' + VERSION + '.tar.xz'
+		    sh 'cp ../factorio_alpha_x64_' + VERSION + '.tar.xz factorio_alpha_x64_' + VERSION + '.tar.xz'
                     ver = VERSION + '~' + distroCodename + '~' + env.BUILD_NUMBER
                 }
                 stage('Build ' + architecture + ' ' + distribution) {
