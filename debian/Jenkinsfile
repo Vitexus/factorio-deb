@@ -55,7 +55,7 @@ architectures.each {
                         script: 'dpkg-parsechangelog --show-field Version',
                         returnStdout: true
                     ).trim()
-                    ver = VERSION + '~' + distroCodename + '~' + env.BUILD_NUMBER
+                    ver = VERSION
                 }
                 stage('Build ' + architecture + ' ' + distribution) {
                     buildImage.inside {
