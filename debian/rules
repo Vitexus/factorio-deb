@@ -8,6 +8,8 @@ archive="factorio_alpha_x64_$(version).tar.xz"
 	dh $@
 
 override_dh_auto_build:
+	ls -la
+	pwd
 	dh_auto_build
 
 override_dh_install:
