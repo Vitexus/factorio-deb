@@ -1,4 +1,4 @@
-factorio (1.1.78) UNRELEASED; urgency=medium
+factorio (1.1.88) UNRELEASED; urgency=medium
 
   [ CyberVitexus ]
   * Build!
@@ -25,5 +25,6 @@ factorio (1.1.78) UNRELEASED; urgency=medium
   * Current version 1.1.61
   * Current version 1.1.61
   * Current version 1.1.78
+  * repack
 
- -- vitex <info@vitexsoftware.cz>  Sat, 25 Mar 2023 16:22:16 +0100
+ -- vitex <info@vitexsoftware.cz>  Sat, 22 Jul 2023 00:45:06 +0200
