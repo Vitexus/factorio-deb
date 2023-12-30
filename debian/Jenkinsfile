@@ -34,7 +34,6 @@ architectures.each {
         println  'Dist:' + distribution
 
         def dist = distribution.split(':')
-        //      distroFamily = dist[0]
         distroCodename = dist[1]
 
         def buildImage = ''
