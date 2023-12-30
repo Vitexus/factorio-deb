@@ -42,3 +42,7 @@ override_dh_install:
 	chmod 666 debian/factorio/usr/share/games/factorio/factorio-current.log
 	dh_install
 	debian/mkico.sh
+
+override_dh_builddeb
+	df -h
+	dh_builddeb
