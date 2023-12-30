@@ -44,6 +44,7 @@ architectures.each {
                 stage('Checkout ' + architecture + ' ' + distribution) {
                     buildImage = docker.image(vendor + '/' + distribution)
                     sh 'git checkout debian/changelog'
+                    sh 'debian/upver.sh'
                     def VERSION = sh(
                         script: 'dpkg-parsechangelog --show-field Version',
                         returnStdout: true
