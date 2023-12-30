@@ -6,3 +6,5 @@ debian/factorio.substvars
 debian/files
 debian/factorio/
 uploader.sh
+trigger.sh
+.vscode/settings.json
